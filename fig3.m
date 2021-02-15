@@ -2,8 +2,8 @@
 addpath('./fig2')
 close all
 
-eeg_name = '.\EEG-EMG-EM\02.edf';
-pupil_name = '.\EEG-EMG-EM\02fuse_data_prepro.mat';
+eeg_name = '.\data\EEG-EMG-EM\02.edf';
+pupil_name = '.\data\EEG-EMG-EM\02fuse_data_prepro.mat';
 
 [ali_eeg, ali_pupil, time_eeg, time_pupil, fs_eeg] = load_eeg_pupil(eeg_name, pupil_name);
 time_pupilh = time_pupil/3600;
